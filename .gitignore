@@ -11,6 +11,11 @@ target/
 *.env
 application-local.properties
 
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
 # OS Junk
 .DS_Store
 Thumbs.db
