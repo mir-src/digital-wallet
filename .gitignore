@@ -1,10 +1,32 @@
-HELP.md
+# Build outputs (Maven)
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+!.mvn/wrapper/maven-wrapper.jar
 
-### STS ###
+# Log & Runtime files
+*.log
+*.tmp
+
+# Environment & Secrets (Crucial for Phase 2 Docker / DB setup)
+.env
+*.env
+application-local.properties
+
+# OS Junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# STS / Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +35,10 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
